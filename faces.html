@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DMcJ Arts | Faces</title>
+<meta name="description" content="Portraits and faces, caught in a moment.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231b1815'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='26' fill='%23d9b98c' text-anchor='middle'%3EDMcJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html">DMcJ <span>Arts</span></a>
+  <nav><a href="index.html" aria-current="page">Gallery</a><a href="sip-and-paint.html">Sip &amp; Paint</a><a href="about.html">About</a><a href="about.html#contact">Contact</a></nav>
+</header>
+<main>
+<section class="intro">
+  <h1>Faces</h1>
+  <p>Portraits and faces, caught in a moment.</p>
+</section>
+<nav class="themes" aria-label="Themes"><a href="index.html">All work</a><a href="the-body.html">The Body</a><a href="becoming-apart.html">Becoming Apart</a><a href="roots-threads-and-connection.html">Roots, Threads and Connection</a><a href="cosmos.html">Cosmos</a><a href="faces.html" aria-current="page">Faces</a></nav>
+<ul class="grid">
+  <li><button class="work" data-index="0" aria-label="Open Resting Thoughts">
+    <img src="images-thumbs/resting-thoughts.jpg" alt="Resting Thoughts. Eyes closed, cheek resting on a hand, lost somewhere in her own head." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Resting Thoughts</span>
+  </button></li>
+  <li><button class="work" data-index="1" aria-label="Open Weeping Greens">
+    <img src="images-thumbs/weeping-greens.jpg" alt="Weeping Greens. A young woman looks straight out at you, one clear eye and one weeping green as her pupil melts." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Weeping Greens</span>
+  </button></li>
+  <li><button class="work" data-index="2" aria-label="Open Out Loud">
+    <img src="images-thumbs/out-loud.jpg" alt="Out Loud. Pinks and blues pushed hard into the paper, mouth wide open." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Out Loud</span>
+  </button></li>
+  <li><button class="work" data-index="3" aria-label="Open Silenced Ember">
+    <img src="images-thumbs/silenced-ember.jpg" alt="Silenced Ember. A band of orange light falls across the mouth and shoulder, the rest left in shadow." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Silenced Ember</span>
+  </button></li>
+  <li><button class="work" data-index="4" aria-label="Open Blue Mood">
+    <img src="images-thumbs/blue-mood.jpg" alt="Blue Mood. A blue face with deep red hair, steady and serious, surrounded by warm, hazy colour." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Blue Mood</span>
+  </button></li>
+  <li><button class="work" data-index="5" aria-label="Open Beneath the Colour">
+    <img src="images-thumbs/beneath-the-colour.jpg" alt="Beneath the Colour. Look long enough and a face surfaces through the drips and drags of paint." width="600" height="600" loading="eager" decoding="async">
+    <span class="work-title">Beneath the Colour</span>
+  </button></li>
+  <li><button class="work" data-index="6" aria-label="Open Quiet Contemplation">
+    <img src="images-thumbs/quiet-contemplation.jpg" alt="Quiet Contemplation. A woman looks down and away, caught in her own thoughts against a pale doorway." width="600" height="600" loading="lazy" decoding="async">
+    <span class="work-title">Quiet Contemplation</span>
+  </button></li>
+  <li><button class="work" data-index="7" aria-label="Open Pink Friends">
+    <img src="images-thumbs/pink-friends.jpg" alt="Pink Friends. Head thrown back, mid-laugh, built entirely from scribbled lines of pink and purple biro." width="600" height="600" loading="lazy" decoding="async">
+    <span class="work-title">Pink Friends</span>
+  </button></li>
+  <li><button class="work" data-index="8" aria-label="Open Caught Laughing">
+    <img src="images-thumbs/caught-laughing.jpg" alt="Caught Laughing. Eyes closed, head tipped down, mid-laugh." width="600" height="600" loading="lazy" decoding="async">
+    <span class="work-title">Caught Laughing</span>
+  </button></li>
+</ul>
+</main>
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lb-title" hidden>
+  <button class="lb-close" aria-label="Close">×</button>
+  <button class="lb-prev" aria-label="Previous artwork">‹</button>
+  <figure>
+    <div class="lb-media"><img id="lb-img" alt=""></div>
+    <figcaption>
+      <h2 id="lb-title"></h2>
+      <p id="lb-caption"></p>
+      <p id="lb-medium" class="medium"></p>
+      <div id="lb-thumbs" class="lb-thumbs"></div>
+      <p class="enquire">Interested in this piece? <a href="https://www.instagram.com/dmcj_arts/">Message me on Instagram</a> or <a href="https://www.facebook.com/profile.php?id=61595677577819">Facebook</a>.</p>
+    </figcaption>
+  </figure>
+  <button class="lb-next" aria-label="Next artwork">›</button>
+</div>
+<script>window.WORKS=[{"title": "Resting Thoughts", "slug": "resting-thoughts", "images": ["resting-thoughts.jpg"], "caption": "Eyes closed, cheek resting on a hand, lost somewhere in her own head. Soft pastel lets the light settle gently on the skin.", "medium": "Soft pastel · approx. 30 × 35 cm"}, {"title": "Weeping Greens", "slug": "weeping-greens", "images": ["weeping-greens.jpg"], "caption": "A young woman looks straight out at you, one clear eye and one weeping green as her pupil melts. An orange ribbon winds around them. Some sadness arrives early and stays a long time.", "medium": "Acrylic on canvas board · approx. 30 × 42 cm"}, {"title": "Out Loud", "slug": "out-loud", "images": ["out-loud.jpg"], "caption": "Pinks and blues pushed hard into the paper, mouth wide open. Some feelings don't want to be tidied up or made polite. This one is allowed to take up the whole page.", "medium": "Water-soluble oil pastel · approx. 29 × 42 cm"}, {"title": "Silenced Ember", "slug": "silenced-ember", "images": ["silenced-ember.jpg"], "caption": "A band of orange light falls across the mouth and shoulder, the rest left in shadow. Light can hide as much as it shows, and darkness can reveal more than we can see.", "medium": "Photography · prints available in various sizes"}, {"title": "Blue Mood", "slug": "blue-mood", "images": ["blue-mood.jpg"], "caption": "A blue face with deep red hair, steady and serious, surrounded by warm, hazy colour. The world can be bright while you feel anything but.", "medium": "Acrylic on canvas · approx. 40 × 65 cm"}, {"title": "Beneath the Colour", "slug": "beneath-the-colour", "images": ["beneath-the-colour.jpg"], "caption": "Look long enough and a face surfaces through the drips and drags of paint. It was always there under the noise.", "medium": "Acrylic on board · approx. 40 × 65 cm"}, {"title": "Quiet Contemplation", "slug": "quiet-contemplation", "images": ["quiet-contemplation.jpg"], "caption": "A woman looks down and away, caught in her own thoughts against a pale doorway. The kind of stillness you only see when someone thinks no one is looking.", "medium": "Oil on canvas · approx. 40 × 60 cm"}, {"title": "Pink Friends", "slug": "pink-friends", "images": ["pink-friends.jpg"], "caption": "Head thrown back, mid-laugh, built entirely from scribbled lines of pink and purple biro. Joyful memories.", "medium": "Ballpoint pen on paper · approx. 21 × 29 cm"}, {"title": "Caught Laughing", "slug": "caught-laughing", "images": ["caught-laughing.jpg"], "caption": "Eyes closed, head tipped down, mid-laugh. Bright blue hair and warm oranges for a moment of pure, unguarded joy.", "medium": "Acrylic · approx. 20 × 28 cm"}];</script>
+<script src="script.js"></script>
+<footer class="site-footer">
+  <p>© 2026 DMcJ Arts. All artwork is the artist's own and may not be reproduced without permission.</p>
+  <p><a href="https://www.instagram.com/dmcj_arts/" rel="me">Instagram @dmcj_arts</a> · <a href="https://www.facebook.com/profile.php?id=61595677577819" rel="me">Facebook</a></p>
+</footer>
+</body>
+</html>
